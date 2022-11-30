@@ -46,6 +46,10 @@ p{
 }
 a{
     text-decoration: none;
+    color: var(--gris);
+}
+ul{
+    list-style: none;
 }
 .contenedor{
     max-width: 120rem;
@@ -73,6 +77,41 @@ img{
 }
 .fa-solid:hover{
     rotate: 180deg;
+}
+.boton-menu{
+    border: none;
+    background: none;
+    display: block;
+}
+
+/* NAV BAR RESPONSIVE */
+.nav-menu{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+    background-color: var(--azul_oscuro);
+    position: fixed;
+    top: 6rem;
+    width: 100%;
+    /* padding: 2rem 0; */
+    height: 42%;
+    overflow-y: auto;
+    left: 100%;
+    transition: 0.5s;
+}
+.nav-menu-item{
+    line-height: 5rem;    
+    font-size: 1.8rem;
+}
+.nav-link:hover{
+    color: var(--amarillo);
+}
+.nav-menu-visible{
+    left: 0;
+}
+.nav-menu-invisible{
+    left: 100%;
 }
 
 /* NAV BAR DESKTOP */
